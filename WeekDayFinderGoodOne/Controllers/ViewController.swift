@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("ViewController")
         // Do any additional setup after loading the view.
+        print("Example")
     }
 
     @IBAction func findButtonTapped(_ sender: Any) {
