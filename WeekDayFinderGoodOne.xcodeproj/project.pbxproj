@@ -13,6 +13,7 @@
 		0106A1A32742F42200F3E31C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0106A1A12742F42200F3E31C /* Main.storyboard */; };
 		0106A1A52742F42600F3E31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0106A1A42742F42600F3E31C /* Assets.xcassets */; };
 		0106A1A82742F42600F3E31C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0106A1A62742F42600F3E31C /* LaunchScreen.storyboard */; };
+		0106A1B727439D2F00F3E31C /* AppearenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0106A1B627439D2F00F3E31C /* AppearenceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0106A1A42742F42600F3E31C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0106A1A72742F42600F3E31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0106A1A92742F42600F3E31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0106A1B627439D2F00F3E31C /* AppearenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		0106A19A2742F42200F3E31C /* WeekDayFinderGoodOne */ = {
 			isa = PBXGroup;
 			children = (
-				0106A19B2742F42200F3E31C /* AppDelegate.swift */,
-				0106A19D2742F42200F3E31C /* SceneDelegate.swift */,
-				0106A19F2742F42200F3E31C /* ViewController.swift */,
-				0106A1A12742F42200F3E31C /* Main.storyboard */,
+				0106A1B22743964400F3E31C /* Delegate */,
+				0106A1B0274395C000F3E31C /* Views */,
+				0106A1B32743966600F3E31C /* Controllers */,
 				0106A1A42742F42600F3E31C /* Assets.xcassets */,
-				0106A1A62742F42600F3E31C /* LaunchScreen.storyboard */,
 				0106A1A92742F42600F3E31C /* Info.plist */,
 			);
 			path = WeekDayFinderGoodOne;
+			sourceTree = "<group>";
+		};
+		0106A1B0274395C000F3E31C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0106A1A12742F42200F3E31C /* Main.storyboard */,
+				0106A1A62742F42600F3E31C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0106A1B22743964400F3E31C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0106A19D2742F42200F3E31C /* SceneDelegate.swift */,
+				0106A19B2742F42200F3E31C /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		0106A1B32743966600F3E31C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0106A19F2742F42200F3E31C /* ViewController.swift */,
+				0106A1B627439D2F00F3E31C /* AppearenceViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0106A1A02742F42200F3E31C /* ViewController.swift in Sources */,
+				0106A1B727439D2F00F3E31C /* AppearenceViewController.swift in Sources */,
 				0106A19C2742F42200F3E31C /* AppDelegate.swift in Sources */,
 				0106A19E2742F42200F3E31C /* SceneDelegate.swift in Sources */,
 			);
