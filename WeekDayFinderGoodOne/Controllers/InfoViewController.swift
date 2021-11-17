@@ -2,28 +2,40 @@
 //  InfoViewController.swift
 //  WeekDayFinderGoodOne
 //
-//  Created by anda.zidele on 16/11/2021.
+//  Created by anda.zidele on 17/11/2021.
 //
 
 import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var appInfoLabel: UILabel!
+    @IBOutlet weak var appDescLabel: UILabel!
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var otherBackImage: UIImageView!
+    
+    var infoText = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if !infoText.isEmpty{
+            appInfoLabel.text = infoText
+        }
+        appDescLabel.text = "If You would like to change bacground, press button!"
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func changeBackgroundButton(_ sender: Any) {
+        //print("")
+        if backgroundImage.isHidden == true{
+            backgroundImage.isHidden = false
+            otherBackImage.isHidden = true
+        }else{
+            backgroundImage.isHidden = true
+            otherBackImage.isHidden = false
+        }
+        
     }
-    */
+    
 
 }

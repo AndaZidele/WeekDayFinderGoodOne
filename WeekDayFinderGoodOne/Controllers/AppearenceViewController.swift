@@ -23,6 +23,18 @@ class AppearenceViewController: UIViewController {
     }
     
     @IBAction func openSettingsButtonTapped(_ sender: Any) {
+        openSettings()
+    }
+    
+    func setLabelText(){
+        var text = "Unable to specify UI Style!"
+        
+        if self.traitCollection.userInterfaceStyle == .dark {
+            text = "Dark Mode is On.\nGo to Settings if You would like\nto change to Light Mode!"
+        }else{
+            text = "Light Mode is On.\nGo to Settings if You would like\nto change to Dark Mode!"
+        }
+        textLabel.text = text
     }
     
     func openSettings(){
@@ -45,4 +57,10 @@ class AppearenceViewController: UIViewController {
     }
     */
 
+}
+
+extension AppearenceViewController{
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        setLabelText()
+    }
 }
